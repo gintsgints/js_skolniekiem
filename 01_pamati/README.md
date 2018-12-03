@@ -4,7 +4,37 @@
 
 * Chrome
 * Lapas izejas kods - HTML
-* Izstsrādes instrumenti
+* Izstrādes instrumenti
+
+## HTML
+
+* Fiddle - https://jsfiddle.net/gints/x6xo1s24/10/
+* HTML "Tagi"
+
+```html
+<h1>
+  Virsraksts
+</h1>
+<h2>Apakšvirsraksts</h2>
+<p>Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f</p>
+<p>Šī ir cita rindkopa lksjdf lkj sdflkj asdlkfj </p>
+<ul>
+  <li>Saraksta elements 1</li>
+  <li>Saraksta elements 2</li>
+</ul>
+<a href="https://www.google.com">Ejam uz google.com</a>
+```
+* CSS
+
+```css
+h1 {
+  color: green;
+}
+
+h2 {
+  font-style: italic;
+}
+```
 
 ## Konsole
 
