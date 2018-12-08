@@ -53,6 +53,7 @@ console.log('Ziņa')
 document.write('Hello world')
 // Komentārs
 d = 2
+alert('Hello ' + prompt('Kāds ir jūsu vārds?')')
 ```
 
 ## Mainīgie
@@ -82,15 +83,49 @@ console.log(skaitlis--)
 console.log(skaitlis--)
 ```
 
+## Funkcija
+
+* Funkcija ir vairāku komandu apvienojums
+* Funkcija sākās ar atslēgas vārdu 'function' tad seko funkcijas nosaukums un pēc tam komandas, kas iekļautas figūriekavās.
+* Funkcijas nosaukumam priekšā, iekavās norāda ienākošos datus
+
+```JavaScript
+function sum(skaitlis1, skaitlis2) {
+  let rezultats = skaitlis1 + skaitlis2
+  console.log(rezultats)
+}
+
+sum(2, 3)
+// 5
+```
+
+* Funkcija var atgriezt rezultātu
+
+```JavaScript
+function sum(skaitlis1, skaitlis2) {
+  let rezultats = skaitlis1 + skaitlis2
+  return rezultats
+}
+
+let summa23 = sum(2, 3)
+let summa24 = sum(2, 4)
+console.log(summa23, summa24)
+```
+
 ## Objekts
 
-* Mainīgie var glabāt objektu
+* Mainīgie var glabāt vērtības, funkcijas vai objektu
+* Objekts sevī var apvienot vairākus mainīgos vai funkcijas
 * Teksta virkne ir objekts
 
 ```JavaScript
 let virkne = 'ABCDF'
+// Objektam mainīgajā virkne ir mainīģais length,
+// kas norāda uz virknes objekta garumu
 let garums = virkne.length
 console.log(virkne.length)
+// Objektam virkne ir funkcija - substring,
+// kas atgriež virknes daļu
 let dalja = virkne.substring(1, 2)
 console.log(dalja)
 ```
