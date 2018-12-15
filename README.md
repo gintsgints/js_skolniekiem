@@ -6,3 +6,4 @@ Sekojiet saturam un sāciet apgūt JavaScript! :)
 # Saturs
 
 * [JavaScript pamati](/01_pamati)
+* [NodeJS - Javascript komandrinda](/02_nodejs)
