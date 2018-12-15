@@ -98,13 +98,13 @@ console.log(skaitlis--)
 
 ```JavaScript
 function sakihi() {
-  alert('Sveiks !'))
+  alert('Sveiks !')
 }
 sakihi()
 
 // Fukcijas ar 'argumentiem'
 function sakihi(vards) {
-  alert('Sveiks ' + vards + '!'))
+  alert('Sveiks ' + vards + '!')
 }
 sakihi('Jāni')
 sakihi('Jolanta')
