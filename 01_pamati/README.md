@@ -60,7 +60,7 @@ alert('Sveiks ' + prompt('Kāds ir jūsu vārds?' + '!'))
 ## Mainīgie
 
 * Mainīgais ir vienība kam ir nosaukums un vērtība (dažās valodās arī "tips")
-* Atslēgas vārdi - var, let, const 
+* Atslēgas vārdi - var (globāls mainīgais), let (lokāls mainīgais), const (konstante)
 
 ```JavaScript
 // Mainīgā vērtība undefined
@@ -87,6 +87,27 @@ console.log(skaitlis)
 console.log(--skaitlis)
 console.log(skaitlis--)
 console.log(skaitlis--)
+```
+
+### Konstantes
+
+* Konstantes lieto, ja kādai vērtībai ir nepieciešams atkārtots lietojums
+* Konstanti definē ar atslēgas vārdu const
+
+```JavaScript
+const pi = 3.141592653589793
+// pēc constantes definēšanas, mums ir jau daudz vienkāršāk lietot pi
+
+let radius = 3
+let perim = 2 * pi * radius
+console.log(perim)
+```
+
+* Konstantes vērtību nedrīkst mainīt.
+
+```JavaScript
+// Ja izpildīts kods iepriekš, tad šis izdos kļūdu
+const pi = 2
 ```
 
 ## Funkcija
