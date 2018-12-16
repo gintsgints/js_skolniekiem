@@ -178,6 +178,8 @@ let masivs = new Array()
 masivs
 ```
 
+* [String funkciju apraksts](https://www.w3schools.com/jsref/jsref_obj_string.asp)
+
 ## Masīvs
 
 * Masīvs ir objekts
@@ -200,6 +202,8 @@ console.log(a[1])
 let c = ['cat', 'dog', 32, true]
 console.log(a[3])
 ```
+
+* [Masīva funkciju apraksts](https://www.w3schools.com/jsref/jsref_obj_array.asp)
 
 ## Izpildes kārtības kontrole - IF
 
