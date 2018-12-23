@@ -1,0 +1,13 @@
+{
+  "name": "proj_1",
+  "version": "1.0.0",
+  "description": "NodeJS sākuma projekts",
+  "main": "index.js",
+  "repository": "https://github.com/gintsgints/js_skolniekiem",
+  "author": "Gints Polis <polis.gints@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  }
+}
