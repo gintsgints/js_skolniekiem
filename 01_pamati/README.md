@@ -2,29 +2,33 @@
 
 ## Pārlūks
 
-* Chrome
-* Lapas izejas kods - HTML
-* Izstrādes instrumenti
+- Chrome
+- Lapas izejas kods - HTML
+- Izstrādes instrumenti
 
 ## HTML
 
-* Fiddle - https://jsfiddle.net/gints/x6xo1s24/10/
-* HTML "Tagi"
+- Fiddle - https://jsfiddle.net/gints/x6xo1s24/10/
+- HTML "Tagi"
 
 ```html
-<h1>
-  Virsraksts
-</h1>
+<h1>Virsraksts</h1>
 <h2>Apakšvirsraksts</h2>
-<p>Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f</p>
-<p>Šī ir cita rindkopa lksjdf lkj sdflkj asdlkfj </p>
+<p>
+  Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl;
+  kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena
+  rinkopa lkajdfl; kasjdf l;akjsd f. Šī ir viena rinkopa lkajdfl; kasjdf l;akjsd
+  f
+</p>
+<p>Šī ir cita rindkopa lksjdf lkj sdflkj asdlkfj</p>
 <ul>
   <li>Saraksta elements 1</li>
   <li>Saraksta elements 2</li>
 </ul>
 <a href="https://www.google.com">Ejam uz google.com</a>
 ```
-* CSS
+
+- CSS
 
 ```css
 h1 {
@@ -38,11 +42,11 @@ h2 {
 
 ## Konsole
 
-* konsolē var izpildīt JavaScript
-* darbības
+- konsolē var izpildīt JavaScript
+- darbības
   - 2 + 2 ?
   - 'Ziņa' ?
-  - console.log('Ziņa') 
+  - console.log('Ziņa')
   - document.write('Hello world')
   - d = 2 ?
 
@@ -59,8 +63,8 @@ alert('Sveiks ' + prompt('Kāds ir jūsu vārds?' + '!'))
 
 ## Mainīgie
 
-* Mainīgais ir vienība kam ir nosaukums un vērtība (dažās valodās arī "tips")
-* Atslēgas vārdi - var (globāls mainīgais), let (lokāls mainīgais), const (konstante)
+- Mainīgais ir vienība kam ir nosaukums un vērtība (dažās valodās arī "tips")
+- Atslēgas vārdi - var (globāls mainīgais), let (lokāls mainīgais), const (konstante)
 
 ```JavaScript
 // Mainīgā vērtība undefined
@@ -91,8 +95,8 @@ console.log(skaitlis--)
 
 ### Konstantes
 
-* Konstantes lieto, ja kādai vērtībai ir nepieciešams atkārtots lietojums
-* Konstanti definē ar atslēgas vārdu const
+- Konstantes lieto, ja kādai vērtībai ir nepieciešams atkārtots lietojums
+- Konstanti definē ar atslēgas vārdu const
 
 ```JavaScript
 const pi = 3.141592653589793
@@ -103,7 +107,7 @@ let perim = 2 * pi * radius
 console.log(perim)
 ```
 
-* Konstantes vērtību nedrīkst mainīt.
+- Konstantes vērtību nedrīkst mainīt.
 
 ```JavaScript
 // Ja izpildīts kods iepriekš, tad šis izdos kļūdu
@@ -112,10 +116,10 @@ const pi = 2
 
 ## Funkcija
 
-* Funkcija ir vairāku komandu apvienojums
-* Funkcijas izmanto lai saglabātu komandas atkārtotai izpildei
-* Funkcija sākās ar atslēgvārdu 'function' tad seko funkcijas nosaukums, iekavas un pēc tam komandas, kas iekļautas figūriekavās.
-* Funkcijas nosaukumam priekšā, iekavās norāda ienākošos datus - argumentus
+- Funkcija ir vairāku komandu apvienojums
+- Funkcijas izmanto lai saglabātu komandas atkārtotai izpildei
+- Funkcija sākās ar atslēgvārdu 'function' tad seko funkcijas nosaukums, iekavas un pēc tam komandas, kas iekļautas figūriekavās.
+- Funkcijas nosaukumam priekšā, iekavās norāda ienākošos datus - argumentus
 
 ```JavaScript
 function sakihi() {
@@ -141,7 +145,7 @@ sum(2, 3)
 sum(3, 5)
 ```
 
-* Funkcija var atgriezt rezultātu ar atslēgvārdu 'return'
+- Funkcija var atgriezt rezultātu ar atslēgvārdu 'return'
 
 ```JavaScript
 function sum(skaitlis1, skaitlis2) {
@@ -156,9 +160,9 @@ console.log(summa23, summa24)
 
 ## Objekts = properties & functions
 
-* Mainīgie var glabāt vērtības, funkcijas ('functions') vai objektu
-* Objekts sevī var apvienot vairākus mainīgos ('properties') vai funkcijas
-* Teksta virkne ir objekts
+- Mainīgie var glabāt vērtības, funkcijas ('functions') vai objektu
+- Objekts sevī var apvienot vairākus mainīgos ('properties') vai funkcijas
+- Teksta virkne ir objekts
 
 ```JavaScript
 let virkne = 'ABCDF'
@@ -178,12 +182,12 @@ let masivs = new Array()
 masivs
 ```
 
-* [String funkciju apraksts](https://www.w3schools.com/jsref/jsref_obj_string.asp)
+- [String funkciju apraksts](https://www.w3schools.com/jsref/jsref_obj_string.asp)
 
 ## Masīvs
 
-* Masīvs ir objekts
-* Masīvs satur vienu vai vairākas vērtības
+- Masīvs ir objekts
+- Masīvs satur vienu vai vairākas vērtības
 
 ```JavaScript
 // Izveidojam masīvu
@@ -203,12 +207,33 @@ let c = ['cat', 'dog', 32, true]
 console.log(a[3])
 ```
 
-* [Masīva funkciju apraksts](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+- [Masīva funkciju apraksts](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+
+### JSON (JavaScript Object Notation) - objekta norādīšanai
+
+https://www.json.org/
+
+```JavaScript
+let jaunsobjekts = {
+  "Vards": "Jānis",
+  "Uzvārds": "Bērziņš",
+  "Profesija": "Skolotājs",
+  "Bērni": [
+    {
+      "Dzimums": "Meitene"
+      "Vārds": "Maija"
+    }, {
+      "Dzimums": "Zēns"
+      "Vārds": "Viesturs"
+    }
+  ]
+}
+```
 
 ## Izpildes kārtības kontrole - IF
 
-* figūriekavās ievieto komandas, kuras kontrolē
-* 'if' - izpilda kodu tikai ja vērtība patiesa
+- figūriekavās ievieto komandas, kuras kontrolē
+- 'if' - izpilda kodu tikai ja vērtība patiesa
 
 ```JavaScript
 let a = 7
@@ -232,7 +257,7 @@ s == 'Jānis'
 s == 'Zane'
 ```
 
-* if var papildināt ar else, lai izpildītu komandas pretējā gadījumā
+- if var papildināt ar else, lai izpildītu komandas pretējā gadījumā
 
 ```JavaScript
 let name = 'Alise'
@@ -256,7 +281,7 @@ sveiciens('Zane')
 
 ## Izpildes kārtības kontrole - For
 
-* atslēgvārdu for izmanto lai atkārtotu kodu vairākas reizes
+- atslēgvārdu for izmanto lai atkārtotu kodu vairākas reizes
 
 ```JavaScript
 for(i=0;i<4;i++) {
@@ -264,5 +289,53 @@ for(i=0;i<4;i++) {
 }
 ```
 
+## DOM - HTML koda attēlojums JavaScript
 
+- Interneta pārlūka JavaScript ir pieejams HTML attēlojuma objekts - document
 
+## Notikumi
+
+- Notikumi ir ziņojumi
+- Ziņojumu var nosūtīt HTML lapa, lai norādītu uz:
+  - web lapas ielādes pabeigšanu
+  - ievada lauka izmaiņām
+  - pogas nospiešanu u.c.
+- HTML ir atribūti funkcijas izsaukšanai pēc ziņojuma
+
+```html
+<button onclick="this.innerHTML = Date()">The time is?</button>
+```
+
+[Vairāk par ziņojumiem](https://www.w3schools.com/js/js_events.asp)
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<input id="a"></input> un <input id="b"></input><br><br>
+<button onclick="doSum()">Summa ir</button>
+<input id="res"></input>
+
+<script>
+function doSum() {
+  document.getElementById("res").value =
+    Number(document.getElementById("a").value) + Number(document.getElementById("b").value)
+}
+</script>
+</body>
+</html>
+```
+
+## JavaScript attīstība (ES6, ES7, ES8)
+
+- JavaScript tehniskais nosaukums EcmaScript
+- Pēdējā laikā ļoti strauji attīstās
+- Galvenie ES6 jauninājumi - http://es6-features.org
+
+### Teksta mainīgo - "Template"
+
+### Saīsinājumi
+
+## HTML projekts
+
+- [Projekta apraksts un kods](/01_pamati/proj_1/)
