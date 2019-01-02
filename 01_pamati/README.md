@@ -93,27 +93,6 @@ console.log(skaitlis--)
 console.log(skaitlis--)
 ```
 
-### Konstantes
-
-- Konstantes lieto, ja kādai vērtībai ir nepieciešams atkārtots lietojums
-- Konstanti definē ar atslēgas vārdu const
-
-```JavaScript
-const pi = 3.141592653589793
-// pēc constantes definēšanas, mums ir jau daudz vienkāršāk lietot pi
-
-let radius = 3
-let perim = 2 * pi * radius
-console.log(perim)
-```
-
-- Konstantes vērtību nedrīkst mainīt.
-
-```JavaScript
-// Ja izpildīts kods iepriekš, tad šis izdos kļūdu
-const pi = 2
-```
-
 ## Funkcija
 
 - Funkcija ir vairāku komandu apvienojums
@@ -289,6 +268,39 @@ for(i=0;i<4;i++) {
 }
 ```
 
+### Nedaudz par undefined, null un ===
+
+- undefined ir vērtība
+
+```JavaScript
+let a
+
+if (a === undefined) {
+  console.log('Mainīgais nav definēts')
+} else {
+  console.log('Mainīgais ir definēts')
+}
+
+if (a === null) {
+  console.log('Mainīgais ir null')
+}
+
+if (a == null) {
+  console.log('Mainīgais ir null')
+}
+if (a == undefined) {
+  console.log('Mainīgais nav definēts')
+} else {
+  console.log('Mainīgais ir definēts')
+}
+
+
+a = 3
+a = null
+// Labāk tā programmās nedarīt :)
+a = undefined
+```
+
 ## DOM - HTML koda attēlojums JavaScript
 
 - Interneta pārlūka JavaScript ir pieejams HTML attēlojuma objekts - document
@@ -332,9 +344,93 @@ function doSum() {
 - Pēdējā laikā ļoti strauji attīstās
 - Galvenie ES6 jauninājumi - http://es6-features.org
 
+### Mainīgā ietvars
+
+- ārpus funkcijas ar atslēgvārdu var definēts mainīgs pieejams visur, tas ir "Glboāls"
+- ja var izveido funkcijas ietvarā, tas ir pieejams tikai šai funkcijai un visām šajā funkcijā definētajām.
+- let, papildus var, izveido mainīgo kurš eksistē tikai figūriekavu "ietvarā"
+- const ir tikai lasīšanai
+
+```JavaScript
+var globTest = 'Globālais mainīgais'
+function druka() {
+
+  function izvads() {
+    console.log('Funkcija izvads: ', glob2Test)
+  }
+
+  let funIetvTest = 'Mainīgais pieejams tikai funkcijai'
+  if (true) {
+    let ifIetvTest = 'If ietvarā definēts mainīgais'
+    console.log('Funkcija druka if ietvarā:', ifIetvTest)
+  }
+  // Izdrukā globālo mainīgo globTest un citus lokāli definētus
+  console.log('Funkcija druka:', globTest, glob2Test, funIetvTest)
+  // Ja atkomentēsiet, šis izdod kļūdu. Jo mainīgais ifIetvTests ir definēts tikai if ietvarā
+  // console.log(ifIetvTest)
+  var glob2Test = 'Nav svarīgi kur tiek definēts globālais mainīgais'
+}
+console.log(globTest)
+// šis izdod kļūdu, jo mainīgais glob2Test ir definēts funkcijas ietvarā
+console.log(glob2Test)
+// šis izdod kļūdu, jo mainīgais funIetvTest ir definēts funkcijas ietvarā
+console.log(funIetvTest)
+```
+
+- atslēgas vārds 'this' glabā globālā ietvara mainīgos
+
+```JavaScript
+var a = 'Global?'
+console.log(this.a)
+function ietvars() {
+  let b = 'Local?'
+  console.log(this.a, this.b)
+}
+ietvars()
+console.log(this)
+```
+
+#### Konstantes
+
+- Konstantes lieto, ja kādai vērtībai ir nepieciešams atkārtots lietojums
+- Konstanti definē ar atslēgas vārdu const
+
+```JavaScript
+const pi = 3.141592653589793
+// pēc constantes definēšanas, mums ir jau daudz vienkāršāk lietot pi
+
+let radius = 3
+let perim = 2 * pi * radius
+console.log(perim)
+```
+
+- Konstantes vērtību nedrīkst mainīt.
+
+```JavaScript
+// Ja izpildīts kods iepriekš, tad šis izdos kļūdu
+const pi = 2
+```
+
 ### Teksta mainīgo - "Template"
 
 ### Saīsinājumi
+
+#### 'Arrow' funkcijas
+
+- izmantojot simbolus => arī var izveidot funkciju
+
+```JavaScript
+function add(a, b) {
+  console.log(this)
+  return a + b
+}
+
+let addv2 = (a, b) => {
+  console.log(this)
+  return a + b
+}
+
+```
 
 ## HTML projekts
 
